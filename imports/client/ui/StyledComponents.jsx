@@ -10,51 +10,15 @@ export const
         display: grid;
         grid-template-columns: 0.8fr 1fr 1.2fr;
         grid-template-areas:
-            "nb nb nb"
-            ". v ."
+            "nb s ."
             ". c ."
             ${bloCol}
             "min fot tex"
             "ft ft ft"
         ;
-        background-image: url(/${conf.fonsPrincipal});
-        background-size: ${conf.backgroundSize};
-        background-repeat: ${conf.backgroundRepeat};
-        background-attachment: ${conf.backgroundAttachment};
     `,
 
-    // MainLayout = styled.div.attrs({
-    //   className: 'container'
-    // })`
-    //     width: 100%;
-    //     height: 100%;
-    //     padding: 0px;
-    //     display: grid;
-    //     grid-template-columns: auto auto auto;
-    //     grid-template-rows: auto auto auto;
-    //     grid-template-areas:
-    //     "navbar navbar navbar"
-    //     "filtro content content"
-    //     ${conf.layoutTemplateArea}
-    //     "present present present"
-    //     "footer footer footer";
-    //     background-image: url(/${conf.fonsPrincipal});
-    //     background-size: ${conf.backgroundSize};
-    //     background-repeat: ${conf.backgroundRepeat};
-    //     background-attachment: ${conf.backgroundAttachment};
-    // `,
-
-    // HomeLayout = styled.div.attrs({
-    //   className: 'container'
-    // })`
-    //   display: grid;
-    //   grid-template-columns: auto;
-    //   grid-template-rows: auto auto;
-    //   grid-template-areas:
-    //   "video"
-    //   "content"
-    // `,
-
+    
     ProductsLayout = styled.div`
       display: grid;
       grid-template-columns: 25% auto;
@@ -71,7 +35,7 @@ export const
         background-color: rgba(255, 255, 255, 0.25);
         transition: all 1s ease;
         z-index: 100;
-        font-family: 'Comfortaa', sans-serif;
+        font-family: 'Pacifico', cursive;
     `,
 
     PosicionFiltro = styled.div`
@@ -140,8 +104,8 @@ export const
         font-size: 2.5em;
         color: white;
         text-shadow: 8px 5px 10px black;
-        font-family: 'Comfortaa', sans-serif;
-        font-weight: 700;
+        font-family: 'Pacifico', cursive;
+        font-weight: 400;
 
         @media (min-width:351px) and (max-width:500px) {
           font-size: 1.4em;
@@ -152,8 +116,8 @@ export const
         }
     `,
 
-    MainVideo = styled.div`
-      grid-area: v;
+    slider = styled.div`
+      grid-area: s;
       padding: 20px;
     `,
 
@@ -167,27 +131,27 @@ export const
         margin-bottom: 20px;
 
         > h1 {
-          font-family: 'Comfortaa', sans-serif;
+          font-family: 'Pacifico', cursive;
           font-size: 2.5em;
-          font-weight: 700;
+          font-weight: 400;
         }
 
         > h2 {
-          font-family: 'Comfortaa', sans-serif;
+          font-family: 'Pacifico', cursive;
           font-size: 2em;
-          font-weight: 500;
+          font-weight: 400;
         }
 
         > h3 {
-          font-family: 'Comfortaa', sans-serif;
+          font-family: 'Pacifico', cursive;;
           font-size: 1.7em;
-          font-weight: 300;
+          font-weight: 400;
         }
 
         p {
-          font-family: 'Comfortaa', sans-serif;
+          font-family: 'Lato', sans-serif;
           font-size: 1.2em;
-          font-weight: 100;
+          font-weight: 400;
         }
     `,
 
@@ -198,8 +162,8 @@ export const
       color: #fff;
       font-size: 1.25em;
 	    text-shadow: 0 1px 0 rgba(255,255,255,.25);
-      font-family: 'Roboto', sans-serif;
-      font-weight: 500;
+      font-family: 'Lato', sans-serif;
+      font-weight: 400;
       //transform: scaleX(.9);
         &:hover, &:focus {
           color: rgb(255, 64, 129);

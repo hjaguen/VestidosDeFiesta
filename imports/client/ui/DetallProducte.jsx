@@ -117,7 +117,7 @@ export default class MainContentProducte extends Component {
                                     fontVariant: `small-caps`,
                                     //text-align: center;
                                     textTransform: `capitalize`,
-                                    fontFamily: `'Comfortaa', sans-serif`,
+                                    fontFamily: `'Pacifico', cursive`,
                                     fontSize: `2.5em`
                                 }}
                             >{this.props.data.producteDETALLS[0].descripcion}
@@ -142,7 +142,7 @@ export default class MainContentProducte extends Component {
                                             background: `rgba(255,255,255,.25)`,
                                             padding: `1em`,
                                             borderRadius: `1em`,
-                                            fontFamily: `'Comfortaa', sans-serif`
+                                            fontFamily: `'Pacifico', cursive`
                                         }}
                                         dangerouslySetInnerHTML={{
                                         __html: sanitizeHtml(this.props.data.producteDETALLS[0].descripcion_long_es)

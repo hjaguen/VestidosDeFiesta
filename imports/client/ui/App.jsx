@@ -373,25 +373,21 @@ export default class App extends Component {
                                 filtreColor={this.state.filtreColor}
                             />
                     )}/>
-                    /*
                     <Route exact path="/" render={() => ([
-                        <Stylo.MainVideo
-                            key="video"
+                        <Stylo.slider
+                            key="slider"
                         >
-                            {conf.video_latinmoda}
-                        </Stylo.MainVideo>
+                            {conf.slider}
+                        </Stylo.slider>
                         ,
                         <Stylo.MainContent
                             key="content"
                         >
-    		              <h1>{conf.subtituloPagina}</h1>
-    		              <h2>{conf.titulo_contenido}</h2>
-    		              {conf.texto_contenido}
     		              {conf.bloque_info}
 
     		            </Stylo.MainContent>
                     ])}/>
-                    */
+                    
                     <Route exact path="/categoria/:subcategoryId" render={({ match, history, location }) => {
                         let
                             variables = Object.assign({}, this.state.variables, {
