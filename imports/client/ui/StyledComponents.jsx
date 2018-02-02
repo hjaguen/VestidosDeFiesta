@@ -10,6 +10,7 @@ export const
         display: grid;
         grid-template-columns: 0.8fr 1fr 1.2fr;
         grid-template-areas:
+            "h h h"
             "nb s ."
             ". c ."
             ${bloCol}
@@ -32,7 +33,7 @@ export const
         //position: sticky;
         top: 0;
         height: min-height;
-        background-color: rgba(255, 255, 255, 0.25);
+        //background-color: rgba(255, 255, 255, 0.25);
         transition: all 1s ease;
         z-index: 100;
         font-family: 'Pacifico', cursive;
@@ -102,7 +103,7 @@ export const
     NavTitle = styled.h1`
         margin-top: 0;
         font-size: 2.5em;
-        color: white;
+        color: black;
         text-shadow: 8px 5px 10px black;
         font-family: 'Pacifico', cursive;
         font-weight: 400;
@@ -118,7 +119,6 @@ export const
 
     slider = styled.div`
       grid-area: s;
-      padding: 20px;
     `,
 
     MainContent = styled.div.attrs({
@@ -159,14 +159,14 @@ export const
       padding: 15px;
       // padding-top: 7px !important;
       // padding-bottom: 7px !important;
-      color: #fff;
+      color: black;
       font-size: 1.25em;
 	    text-shadow: 0 1px 0 rgba(255,255,255,.25);
       font-family: 'Lato', sans-serif;
       font-weight: 400;
       //transform: scaleX(.9);
         &:hover, &:focus {
-          color: rgb(255, 64, 129);
+          color: #e9d859;
 
         }
     `,
@@ -194,4 +194,11 @@ export const
     })`
       background-color: black;
     `
+    ,
+
+    header = styled.header`
+      grid-area: h;
+      position: relative;
+      z-index: 999;
+      `
 ;

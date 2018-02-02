@@ -75,9 +75,6 @@ export let
                             </div>
                         </div>
                     </div>
-                    <div className="col-sm-5 col-sm-offset-1">
-                        <img className="img-rounded img-responsive" src="./slide3.jpg"/>
-                    </div>
                 </div>
             </div>
         </section>

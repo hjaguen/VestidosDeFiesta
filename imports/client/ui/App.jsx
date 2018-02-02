@@ -37,7 +37,7 @@ import {
 } from './Mostraris.jsx';
 import * as Qs from './Queries.jsx';
 import FootrAdaptat from './Footer.jsx';
-//import FreeContent from './FreeContent.jsx';
+import HeaderAdaptat from './Header.jsx';
 import MainContentProducte from './DetallProducte.jsx';
 import * as Stylo from './StyledComponents.jsx';
 
@@ -65,6 +65,12 @@ const NavbarAdaptatAmbSubcategories = graphql(Qs.SubcategoriesQuery, {
         variables
     }
 })(NavbarAdaptat);
+
+const HeaderAdaptatAmbSubcategories = graphql(Qs.SubcategoriesQuery, {
+    options: {
+        variables
+    }
+})(HeaderAdaptat);
 
 export default class App extends Component {
     constructor(props) {
@@ -357,6 +363,11 @@ export default class App extends Component {
         return (
             <Router>
                 <Stylo.LO>
+                    <Route path="/" render={() => (
+                        <HeaderAdaptatAmbSubcategories
+                            subcategoryIdAlState={this.subcategoryIdAlState}
+                        />
+                    )}/>
                     <Route path="/" render={() => (
                             <NavbarAdaptatAmbSubcategories
                                 subcategoryIdAlState={this.subcategoryIdAlState}
