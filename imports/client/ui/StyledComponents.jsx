@@ -37,6 +37,8 @@ export const
         transition: all 1s ease;
         z-index: 100;
         font-family: 'Pacifico', cursive;
+        left:12em;
+        top:2em;
     `,
 
     PosicionFiltro = styled.div`
@@ -48,7 +50,6 @@ export const
       className: 'filtro'
     })`
         width: 90%;
-        max-width: 300px;
         background: rgba(255, 255, 255, 0.25);
         margin: 2em 2em;
         padding: 2em;
@@ -156,7 +157,7 @@ export const
     `,
 
     aLink = styled('a')`
-      padding: 15px;
+      //padding: 15px;
       // padding-top: 7px !important;
       // padding-bottom: 7px !important;
       color: black;

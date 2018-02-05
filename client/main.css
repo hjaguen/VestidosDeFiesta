@@ -179,8 +179,8 @@ ul {
 #menu li, 
 #toggle-menu, 
 #menu .sub-menu {
-  border-style: solid;
-  border-color: rgba(0, 0, 0, .05);
+  /*border-style: solid;
+  border-color: rgba(0, 0, 0, .05);*/
 }
 
 #menu li, 
@@ -201,19 +201,25 @@ ul {
 #menu li, 
 #toggle-menu, 
 #menu a {
+  width: max-content;
   position: relative;
   display: block;
-  color: white;
+  color: black;
   text-shadow: 1px 1px 0 rgba(0, 0, 0, .125);
+  font-size: 1.2em;
 }
 
 #menu, 
 #toggle-menu {
-  background-color: #09c;
+  /*background-color: #09c;*/
 }
 
 #toggle-menu, 
 #menu a {
+  padding: 0em 1.5em;
+}
+
+.main-menu a {
   padding: 1em 1.5em;
 }
 
@@ -223,8 +229,8 @@ ul {
 }
 
 #menu a:hover {
-  background-color: white;
-  color: #09c;
+ /* background-color: white;
+  color: #09c;*/
 }
 
 #menu .sub-menu {
@@ -296,11 +302,12 @@ ul {
   #menu .sub-menu {
     border-width: 0;
     margin: 0;
-    position: absolute;
+    position: relative;
     top: 100%;
     left: 0;
-    width: 12em;
-    z-index: 3000;
+    width: max-content;
+    width: -moz-max-content;
+    /*z-index: 3000;*/
   }
 
   #menu .sub-menu, 
