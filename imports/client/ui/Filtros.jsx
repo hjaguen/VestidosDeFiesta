@@ -165,7 +165,7 @@ export class MarquesSUBCAT extends Component {
             <div
                 className={(window.innerWidth<500)?`amaga`:`mostra`}
                 style={{
-                    margin: `1em auto`,
+                    margin: `3em 0.5em`,
                     width:`25%`,
                     display:`inline-block`
                 }}
@@ -333,7 +333,7 @@ export class TallesSUBCAT extends Component {
             <div
                 className={(window.innerWidth<500)?`amaga`:`mostra`}
                 style={{
-                    margin: `3em auto`,
+                    margin: `3em 1em`,
                     width:`25%`,
                     display:`inline-block`
                 }}
