@@ -98,12 +98,12 @@ export default class NavbarAdaptat extends Component {
         );*/
         return (
             <Stylo.MainNavBar id="menu" className="navbar" role="navigation">
-                <label htmlfor="tm" id="toggle-menu">Menu</label>
+                <label htmlFor="tm" id="toggle-menu">Menu</label>
                 <input type="checkbox" id="tm" />
                 <ul className="main-menu clearfix">
                     <li><a href="#">Vestidos
                             <span className="drop-icon">▾</span>
-                            <label title="Toggle Drop-down" className="drop-icon" htmlfor="sm1">▾</label>
+                            <label title="Toggle Drop-down" className="drop-icon" htmlFor="sm1">▾</label>
                         </a>
                         <input type="checkbox" id="sm1"/>
                         <ul className="sub-menu">

@@ -787,7 +787,7 @@ export default class App extends Component {
                         );
                     }}/>
 
-                    {/*<Route path="/" render={() => (
+                    <Route path="/" render={() => (
                         <div
                             style={{
                                 gridArea: `ft`
@@ -797,7 +797,7 @@ export default class App extends Component {
                                 subcategoryIdAlState={this.subcategoryIdAlState}
                             />
                         </div>
-                    )}/>*/}
+                    )}/>
                 </Stylo.LO>
             </Router>
         );

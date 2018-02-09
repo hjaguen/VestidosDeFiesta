@@ -65,7 +65,111 @@ export default class FootrAdaptat extends Component {
 
         return (
             <div>
-                <Stylo.footer size="mega">
+              <ul>
+                <li>
+                  <a href=""
+                    data-toggle="modal"
+                    data-target="#about">
+                    Quiénes Somos
+                  </a>
+                </li>
+                <li>
+                  <a href=""
+                    data-toggle="modal"
+                    data-target="#terms">
+                    Términos y Condiciones
+                  </a>
+                </li>
+                <li>
+                  <a href=""
+                    data-toggle="modal"
+                    data-target="#cookies">
+                    Políticas de Cookies
+                  </a>
+                </li>
+                <li>
+                  <a href=""
+                    data-toggle="modal"
+                    data-target="#faq">
+                    FAQ
+                  </a>
+                </li>
+              </ul>
+
+                <div className="modal fade" id="about" tabIndex="-1" role="dialog" aria-labelledby="myModalLabel">
+                      <div className="modal-dialog" role="document">
+                        <div className="modal-content">
+                          <div className="modal-header">
+                            <button type="button" className="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                            <h4 className="modal-title" id="myModalLabel">{info.titleAbout}</h4>
+                          </div>
+                          <div className="modal-body">
+                            {info.contAbout}
+                          </div>
+                          <div className="modal-footer">
+                            <button type="button" className="btn btn-default" data-dismiss="modal">Cerrar</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+
+
+                    <div className="modal fade about-modal-lg" id="terms" tabIndex="-1" role="dialog" aria-labelledby="myModalLabel">
+                      <div className="modal-dialog modal-lg" role="document">
+                        <div className="modal-content">
+                          <div className="modal-header">
+                            <button type="button" className="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                            <h4 className="modal-title" id="myModalLabel">{info.titleTerms}</h4>
+                          </div>
+                          <div className="modal-body">
+                            {info.contTerms}
+                          </div>
+                          <div className="modal-footer">
+                            <button type="button" className="btn btn-default" data-dismiss="modal">Cerrar</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+
+
+                    <div className="modal fade about-modal-lg" id="cookies" tabIndex="-1" role="dialog" aria-labelledby="myModalLabel">
+                      <div className="modal-dialog modal-lg" role="document">
+                        <div className="modal-content">
+                          <div className="modal-header">
+                            <button type="button" className="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                            <h4 className="modal-title" id="myModalLabel">{info.titleCookies}</h4>
+                          </div>
+                          <div className="modal-body">
+                            {info.contCookies}
+                          </div>
+                          <div className="modal-footer">
+                            <button type="button" className="btn btn-default" data-dismiss="modal">Cerrar</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+
+
+                    <div className="modal fade" id="faq" tabIndex="-1" role="dialog" aria-labelledby="myModalLabel">
+                      <div className="modal-dialog" role="document">
+                        <div className="modal-content">
+                          <div className="modal-header">
+                            <button type="button" className="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                            <h4 className="modal-title" id="myModalLabel">{info.titleFAQ}</h4>
+                          </div>
+                          <div className="modal-body">
+                            {info.contFAQ}
+                          </div>
+                          <div className="modal-footer">
+                            <button type="button" className="btn btn-default" data-dismiss="modal">Cerrar</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+{/*                <Stylo.footer size="mega">
                     <FooterSection type="middle">
                         <FooterDropDownSection title="Información">
                             <FooterLinkList>
@@ -220,7 +324,7 @@ export default class FootrAdaptat extends Component {
 
                     <FacebookShareButton url="http://www.facebook.com/latinmoda" />
                     <TwitterShareButton url="http://twitter.com/latinmoda"/>
-                </Stylo.footer>
+                </Stylo.footer>*/}
             </div>
         );
     }

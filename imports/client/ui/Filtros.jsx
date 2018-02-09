@@ -165,8 +165,11 @@ export class MarquesSUBCAT extends Component {
             <div
                 className={(window.innerWidth<500)?`amaga`:`mostra`}
                 style={{
-                    margin: `3em 0.5em`,
-                    width:`25%`,
+                    // margin: `3em 0.5em`,
+                    marginTop:`2em`,
+                    marginLeft:`5em`,
+                    marginRight:`1em`,
+                    width:`20%`,
                     display:`inline-block`
                 }}
             >
@@ -333,8 +336,10 @@ export class TallesSUBCAT extends Component {
             <div
                 className={(window.innerWidth<500)?`amaga`:`mostra`}
                 style={{
-                    margin: `3em 1em`,
-                    width:`25%`,
+                    // margin: `3em 1em`,
+                    marginTop:`2em`,
+                    marginRight:`em`,
+                    width:`20%`,
                     display:`inline-block`
                 }}
             >
@@ -389,7 +394,7 @@ export class ColorsSUBCAT extends Component {
                 ?
                      <span
                          style={{
-                             top: `.5em`,
+                             // top: `.5em`,
                              right: `0`,
                              position: ``,
                              border: `1px white solid`,
@@ -398,16 +403,16 @@ export class ColorsSUBCAT extends Component {
                              height: `20px`,
                              background: `fuchsia`,
                              color: `white`,
-                             margin: `.2em`,
+                             // margin: `.2em`,
                              textAlign: `center`,
                              display: `grid`,
                              alignItems: `center`,
                              fontFamily: `v`,
                              cursor: `pointer`,
-                             float: `right`,
-                             marginTop: `-.8em`,
-                             marginRight: `-.7em`,
-                             marginBottom: `.4em`
+                              float: `right`//,
+                             // marginTop: `-.8em`,
+                             // marginRight: `-.7em`,
+                             // marginBottom: `.4em`
                          }}
                         key="x"
                         data-nomcolor=""
@@ -503,10 +508,10 @@ export class ColorsSUBCAT extends Component {
             <div
                 className={`filtreC ${(window.innerWidth<500)?`amaga`:`mostra`}`}
                 style={{
-                    marginTop: `3em`,
+                    marginTop: `2em`,
                     justifyContent: `center`,
                     flexWrap: `wrap`,
-                    width:`30%`,
+                    width:`40%`,
                     display:`inline-block`
                 }}
             >

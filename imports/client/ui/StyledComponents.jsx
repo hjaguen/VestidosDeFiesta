@@ -30,14 +30,13 @@ export const
 
     MainNavBar = styled.nav`
         grid-area: nb;
-        //position: sticky;
-        top: 0;
+        position: sticky;
         height: min-height;
         //background-color: rgba(255, 255, 255, 0.25);
         transition: all 1s ease;
-        z-index: 100;
+        z-index: 500;
         font-family: 'Pacifico', cursive;
-        top:2em;
+        top:8em;
     `,
 
     PosicionFiltro = styled.div`
@@ -50,11 +49,11 @@ export const
     })`
         width: 90%;
         background: rgba(255, 255, 255, 0.25);
-        position: -webkit-sticky;
-        position: sticky;
-        margin-top: -15%;
-        padding-top:2em;
+        position: fixed;
+        margin-top: -8%;
+        // padding-top:2em;
         float:right;
+        z-index:400;
 
         * {
             transition: all 1s ease;
@@ -191,7 +190,7 @@ export const
     footer = styled.footer.attrs({
       className: 'mdl-mega-footer'
     })`
-      background-color: black;
+      // background-color: black;
     `
     ,
 

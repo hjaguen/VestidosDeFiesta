@@ -56,31 +56,31 @@ export let
 
     ,*/
 
-    bloque_info =
-    <div className="row">
-        <section id="content-1-2" className="content-block content-1-2">
-            <div className="container">
-                <div className="row">
-                    <div className="col-sm-6">
-                        <h3>Más Información</h3>
-                        <p className="lead">Contacta con nuestro personal especializado.</p>
-                        <p>Click en la opción que mas te guste y contacta de inmediato con nuestros asesores para ayudarte en lo que necesitas.
-                        Tendremos el gusto de atenderte.</p>
-                        <div className="row">
-                            <div className="col-sm-5 col-xs-12">
-                                <a href="http://m.me/latinmoda" target="_blank" className="btn btn-block btn-primary"><span className="fa fa-cloud-upload"></span> FB Messenger</a>
-                            </div>
-                            <div className="col-sm-5 col-xs-12">
-                                <a href="http://bit.ly/SAC_Latinmoda" target="_blank" className="btn btn-block btn-success"><span className="fa fa-check"></span> WhatsApp</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </div>
+    // bloque_info =
+    // <div className="row">
+    //     <section id="content-1-2" className="content-block content-1-2">
+    //         <div className="container">
+    //             <div className="row">
+    //                 <div className="col-sm-6">
+    //                     <h3>Más Información</h3>
+    //                     <p className="lead">Contacta con nuestro personal especializado.</p>
+    //                     <p>Click en la opción que mas te guste y contacta de inmediato con nuestros asesores para ayudarte en lo que necesitas.
+    //                     Tendremos el gusto de atenderte.</p>
+    //                     <div className="row">
+    //                         <div className="col-sm-5 col-xs-12">
+    //                             <a href="http://m.me/latinmoda" target="_blank" className="btn btn-block btn-primary"><span className="fa fa-cloud-upload"></span> FB Messenger</a>
+    //                         </div>
+    //                         <div className="col-sm-5 col-xs-12">
+    //                             <a href="http://bit.ly/SAC_Latinmoda" target="_blank" className="btn btn-block btn-success"><span className="fa fa-check"></span> WhatsApp</a>
+    //                         </div>
+    //                     </div>
+    //                 </div>
+    //             </div>
+    //         </div>
+    //     </section>
+    // </div>
 
-    ,
+    // ,
 
     /*video_latinmoda =
       <div className="container">
