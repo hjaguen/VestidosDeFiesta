@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import styled from 'styled-components';
 import * as conf from './config.jsx';
 
-let bloCol = (conf.filtres_posicio) === `columna` ? `"col mos mos"` : `"bq bq bq" "mos mos mos"`;
+let bloCol = (conf.filtres_posicio) === `columna` ? `"col mos mos"` : `". bq bq" ". mos mos"`;
 
 export const
     LO = styled.div`
@@ -30,15 +30,13 @@ export const
 
     MainNavBar = styled.nav`
         grid-area: nb;
-        //position: sticky;
-        top: 0;
+        position: sticky;
         height: min-height;
         //background-color: rgba(255, 255, 255, 0.25);
         transition: all 1s ease;
-        z-index: 100;
+        z-index: 500;
         font-family: 'Pacifico', cursive;
-        left:12em;
-        top:2em;
+        top:8em;
     `,
 
     PosicionFiltro = styled.div`
@@ -51,12 +49,11 @@ export const
     })`
         width: 90%;
         background: rgba(255, 255, 255, 0.25);
-        margin: 2em 2em;
-        padding: 2em;
-        borderRadius: 1em;
-        position: -webkit-sticky;
-        position: sticky;
-        top: 160px;
+        position: fixed;
+        margin-top: -8%;
+        // padding-top:2em;
+        float:right;
+        z-index:400;
 
         * {
             transition: all 1s ease;
@@ -167,7 +164,7 @@ export const
       font-weight: 400;
       //transform: scaleX(.9);
         &:hover, &:focus {
-          color: #e9d859;
+          color: yellow;
 
         }
     `,
@@ -193,7 +190,7 @@ export const
     footer = styled.footer.attrs({
       className: 'mdl-mega-footer'
     })`
-      background-color: black;
+      // background-color: black;
     `
     ,
 
