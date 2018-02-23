@@ -169,6 +169,7 @@ export default class FootrAdaptat extends Component {
                         </div>
                       </div>
                     </div>
+                    
 {/*                <Stylo.footer size="mega">
                     <FooterSection type="middle">
                         <FooterDropDownSection title="Información">
