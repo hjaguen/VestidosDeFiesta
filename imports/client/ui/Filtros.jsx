@@ -511,8 +511,9 @@ export class ColorsSUBCAT extends Component {
                     marginTop: `2em`,
                     justifyContent: `center`,
                     flexWrap: `wrap`,
-                    width:`40%`,
-                    display:`inline-block`
+                    width:`35%`,
+                    display:`inline-block`,
+                    backgroundColor:`white`
                 }}
             >
                 {

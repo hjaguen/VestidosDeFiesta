@@ -158,7 +158,16 @@ ul {
     }
 }
 
-#menu ul {
+#menu li {
+    text-align: center;
+  }
+
+.main-menu {
+  position: fixed;
+  top:8em;
+}
+
+/*#menu ul {
   margin: 0;
   padding: 0;
 }
@@ -179,8 +188,8 @@ ul {
 #menu li, 
 #toggle-menu, 
 #menu .sub-menu {
-  /*border-style: solid;
-  border-color: rgba(0, 0, 0, .05);*/
+  border-style: solid;
+  border-color: rgba(0, 0, 0, .05);
 }
 
 #menu li, 
@@ -203,6 +212,7 @@ ul {
 #menu a {
   width: 100%;
   position: relative;
+  position: relative;
   display: block;
   color: black;
   text-shadow: 1px 1px 0 rgba(0, 0, 0, .125);
@@ -211,7 +221,7 @@ ul {
 
 #menu, 
 #toggle-menu {
-  /*background-color: #09c;*/
+  /*background-color: #09c;
 }
 
 #toggle-menu, 
@@ -230,7 +240,7 @@ ul {
 
 #menu a:hover {
  /* background-color: white;
-  color: #09c;*/
+  color: #09c;
 }
 
 #menu .sub-menu {
@@ -242,7 +252,7 @@ ul {
 }
 
 #menu .sub-menu a:hover {
-  /*color: #e9d859;*/
+  /*color: #e9d859;
   color:yellow;
 }
 
@@ -292,8 +302,7 @@ ul {
   }
 
   #menu li {
-    float: left;
-    border-width: 0 1px 0 0;
+    text-align: center;
   }
 
   #menu .sub-menu li {
@@ -303,12 +312,23 @@ ul {
   #menu .sub-menu {
     border-width: 0;
     margin: 0;
-    position: relative;
+    position: absolute;
     top: 100%;
     left: 0;
     width: max-content;
     width: -moz-max-content;
-    /*z-index: 3000;*/
+    /*z-index: 3000;
+  }
+
+  #menu .main-menu {
+    border-width: 0;
+    margin: 0;
+    position: absolute;
+    top: 100%;
+    left: 0;
+   /* width: max-content;
+    width: -moz-max-content;
+    /*z-index: 3000;
   }
 
   #menu .sub-menu, 
@@ -328,18 +348,20 @@ ul {
   #menu li:hover > input[type="checkbox"] + .sub-menu {
     display: block;
   }
-}
+}*/
 
 .cookies-wrapper {
     position: absolute;
     z-index: 4000;
-    bottom: 0;
-    left: 0;
-    right: 30%;
+    bottom: 3.5em;
+    /*left: 0;*/
+    right: 0;
     height: auto;
-    width: 100%;
+    /*width: 100%;*/
+    width: 25%;
     display: table;
-    background: rgba(0,0,0,.5);
+    /*background: rgba(0,0,0,.5);*/
+    background: #d2cece66;
     -webkit-transition: opacity 300ms ease;
     -moz-transition: opacity 300ms ease;
     -o-transition: opacity 300ms ease;
@@ -354,7 +376,8 @@ ul {
     vertical-align: middle;
     font-size: 13px;
     font-family: sans-serif;
-    color: white;
+    /*color: white;*/
+    color: black;
     text-align: left;
     width: 93%;
   }
@@ -373,10 +396,12 @@ ul {
     height: 100%;
     border: 0;
     border-radius: 0;
-    font-size: 20px;
+    /*font-size: 20px;*/
+    font-size: 14px;
     font-family: sans-serif;
     font-weight: 700;
-    color: white;
+    /*color: white;*/
+    color: black;
     background: transparent;
     border-left: 1px rgba(0,0,0,.2) solid;
     cursor: pointer;
@@ -387,7 +412,8 @@ ul {
     transition: background 300ms ease;
   }
   .cookies-wrapper .button-wrapper button:hover {
-    background: rgba(0,0,0,.8);
+    /*background: rgba(0,0,0,.8);*/
+    background: #d2cece66;
   }
   @media (max-width: 800px) {
     .cookies-wrapper .cookies-message {width: 90%; font-size: 11px}

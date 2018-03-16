@@ -265,14 +265,14 @@ export default class App extends Component {
 
             render() {
                 return (
-                    <Stylo.Filtro>
+                    <Stylo.Filtro id="filter">
                     {
                         (this.props.filtreTalla || this.props.filtreMarca || this.props.filtreColor)
                             ?   <span
                                     style={{
-                                        top: `.5em`,
-                                        right: `0`,
-                                        position: ``,
+                                        top: `2.5em`,
+                                        left: `2em`,
+                                        position: `absolute`,
                                         border: `1px white solid`,
                                         borderRadius: `1em`,
                                         width: `20px`,
@@ -285,10 +285,10 @@ export default class App extends Component {
                                         alignItems: `center`,
                                         fontFamily: `v`,
                                         cursor: `pointer`,
-                                        float: `right`,
-                                        marginTop: `-.8em`,
-                                        marginRight: `-.7em`,
-                                        marginBottom: `.4em`,
+                                        //float: `right`,
+                                        // marginTop: `-.8em`,
+                                        // marginRight: `-.7em`,
+                                        // marginBottom: `.4em`,
                                         transform: `scale(1.2)`
                                     }}
                                     title="Desactivar todos los filtros"
@@ -369,7 +369,9 @@ export default class App extends Component {
                             subcategoryIdAlState={this.subcategoryIdAlState}
                         />
                     )}/>
-                    <Route path="/" render={() => (
+
+                    {/*NavBar en Home*/}
+                    <Route exact path="/" render={() => (
                             <NavbarAdaptatAmbSubcategories
                                 subcategoryIdAlState={this.subcategoryIdAlState}
                                 fluid
@@ -385,6 +387,153 @@ export default class App extends Component {
                                 filtreColor={this.state.filtreColor}
                             />
                     )}/>
+
+                    {/* 1. NavBar en Categorias sin filtro */}
+                    <Route exact path="/categoria/:subcategoryId" render={() => (
+                            <NavbarAdaptatAmbSubcategories
+                                subcategoryIdAlState={this.subcategoryIdAlState}
+                                fluid
+                                inverse
+
+                                filtrantMarca={this.filtrantMarca}
+                                filtreMarca={this.state.filtreMarca}
+
+                                filtrantTalla={this.filtrantTalla}
+                                filtreTalla={this.state.filtreTalla}
+
+                                filtrantColor={this.filtrantColor}
+                                filtreColor={this.state.filtreColor}
+                            />
+                    )}/>
+
+                    {/* 2. NavBar filtro de marca*/}
+                    <Route exact path="/categoria/:catname.:catid/marca/:mn.:mid" render={() => (
+                            <NavbarAdaptatAmbSubcategories
+                                subcategoryIdAlState={this.subcategoryIdAlState}
+                                fluid
+                                inverse
+
+                                filtrantMarca={this.filtrantMarca}
+                                filtreMarca={this.state.filtreMarca}
+
+                                filtrantTalla={this.filtrantTalla}
+                                filtreTalla={this.state.filtreTalla}
+
+                                filtrantColor={this.filtrantColor}
+                                filtreColor={this.state.filtreColor}
+                            />
+                    )}/>
+
+                    {/* 3. NavBar Filtro de Talla*/}
+                    <Route exact path="/categoria/:catname.:catid/talla/:tn.:tid" render={() => (
+                            <NavbarAdaptatAmbSubcategories
+                                subcategoryIdAlState={this.subcategoryIdAlState}
+                                fluid
+                                inverse
+
+                                filtrantMarca={this.filtrantMarca}
+                                filtreMarca={this.state.filtreMarca}
+
+                                filtrantTalla={this.filtrantTalla}
+                                filtreTalla={this.state.filtreTalla}
+
+                                filtrantColor={this.filtrantColor}
+                                filtreColor={this.state.filtreColor}
+                            />
+                    )}/>
+
+                    {/* 4. NavBar Filtro Color*/}
+                    <Route exact path="/categoria/:catname.:catid/color/:cn.:cid" render={() => (
+                            <NavbarAdaptatAmbSubcategories
+                                subcategoryIdAlState={this.subcategoryIdAlState}
+                                fluid
+                                inverse
+
+                                filtrantMarca={this.filtrantMarca}
+                                filtreMarca={this.state.filtreMarca}
+
+                                filtrantTalla={this.filtrantTalla}
+                                filtreTalla={this.state.filtreTalla}
+
+                                filtrantColor={this.filtrantColor}
+                                filtreColor={this.state.filtreColor}
+                            />
+                    )}/>
+
+                    {/* 5. NavBar Filtro Marca-Talla*/}
+                    <Route exact path="/categoria/:catn.:catid/marca-talla/:mn-:tn.:mid.:tid" render={() => (
+                            <NavbarAdaptatAmbSubcategories
+                                subcategoryIdAlState={this.subcategoryIdAlState}
+                                fluid
+                                inverse
+
+                                filtrantMarca={this.filtrantMarca}
+                                filtreMarca={this.state.filtreMarca}
+
+                                filtrantTalla={this.filtrantTalla}
+                                filtreTalla={this.state.filtreTalla}
+
+                                filtrantColor={this.filtrantColor}
+                                filtreColor={this.state.filtreColor}
+                            />
+                    )}/>
+
+                    {/* 6. NavBar Filtro Marca-Color */}
+                    <Route  exact path="/categoria/:catn.:catid/marca-color/:mn-:cn.:mid.:cid" render={() => (
+                            <NavbarAdaptatAmbSubcategories
+                                subcategoryIdAlState={this.subcategoryIdAlState}
+                                fluid
+                                inverse
+
+                                filtrantMarca={this.filtrantMarca}
+                                filtreMarca={this.state.filtreMarca}
+
+                                filtrantTalla={this.filtrantTalla}
+                                filtreTalla={this.state.filtreTalla}
+
+                                filtrantColor={this.filtrantColor}
+                                filtreColor={this.state.filtreColor}
+                            />
+                    )}/>
+
+                    {/* 7. NavBar Filtro Talla-Color */}
+                    <Route  exact path="/categoria/:catn.:catid/talla-color/:tn-:cn.:tid.:cid" render={() => (
+                            <NavbarAdaptatAmbSubcategories
+                                subcategoryIdAlState={this.subcategoryIdAlState}
+                                fluid
+                                inverse
+
+                                filtrantMarca={this.filtrantMarca}
+                                filtreMarca={this.state.filtreMarca}
+
+                                filtrantTalla={this.filtrantTalla}
+                                filtreTalla={this.state.filtreTalla}
+
+                                filtrantColor={this.filtrantColor}
+                                filtreColor={this.state.filtreColor}
+                            />
+                    )}/>
+
+                {/* 8. NavBar Filtro Marca-Talla-Color */}
+                    <Route exact path="/categoria/:catname.:catid/marca-talla-color/:mn-:tn-:cn.:mid.:tid.:cid" render={() => (
+                            <NavbarAdaptatAmbSubcategories
+                                subcategoryIdAlState={this.subcategoryIdAlState}
+                                fluid
+                                inverse
+
+                                filtrantMarca={this.filtrantMarca}
+                                filtreMarca={this.state.filtreMarca}
+
+                                filtrantTalla={this.filtrantTalla}
+                                filtreTalla={this.state.filtreTalla}
+
+                                filtrantColor={this.filtrantColor}
+                                filtreColor={this.state.filtreColor}
+                            />
+                    )}/>
+                    
+                    {/*---Fin---*/}
+
                     <Route exact path="/" render={() => ([
                         <Stylo.slider
                             key="slider"
@@ -400,6 +549,7 @@ export default class App extends Component {
     		            </Stylo.MainContent>
                     ])}/>
                     
+                    {/* 1. Filtro en Categorias sin filtro */}
                     <Route exact path="/categoria/:subcategoryId" render={({ match, history, location }) => {
                         let
                             variables = Object.assign({}, this.state.variables, {
@@ -440,6 +590,7 @@ export default class App extends Component {
                         );
                     }}/>
 
+                    {/* 2. Filtro en Categorias filtro Marca */}
                     <Route exact path="/categoria/:catname.:catid/marca/:mn.:mid" render={({ match, history, location }) => {
                         let
                             variables = Object.assign({}, this.state.variables, {
@@ -485,6 +636,7 @@ export default class App extends Component {
                         );
                     }}/>
 
+                    {/* 3. Filtro en Categorias filtro Talla */}
                     <Route exact path="/categoria/:catname.:catid/talla/:tn.:tid" render={({ match, history, location }) => {
                         let
                             variables = Object.assign({}, this.state.variables, {
@@ -528,6 +680,7 @@ export default class App extends Component {
                         );
                     }}/>
 
+                    {/* 4. Filtro en Categorias filtro Color */}
                     <Route exact path="/categoria/:catname.:catid/color/:cn.:cid" render={({ match, history, location }) => {
                         let
                             variables = Object.assign({}, this.state.variables, {
@@ -572,6 +725,7 @@ export default class App extends Component {
                         );
                     }}/>
 
+                    {/* 5. Filtro en Categorias filtro Marca-Talla */}
                     <Route exact path="/categoria/:catn.:catid/marca-talla/:mn-:tn.:mid.:tid" render={({ match, history, location }) => {
                         let
                             variables = Object.assign({}, this.state.variables, {
@@ -620,6 +774,7 @@ export default class App extends Component {
                         );
                     }}/>
 
+                    {/* 6. Filtro en Categorias filtro Marca-Color */}
                     <Route exact path="/categoria/:catn.:catid/marca-color/:mn-:cn.:mid.:cid" render={({ match, history, location }) => {
                         let
                             variables = Object.assign({}, this.state.variables, {
@@ -668,6 +823,7 @@ export default class App extends Component {
                         );
                     }}/>
 
+                    {/* 7. Filtro en Categorias filtro Talla-Color */}
                     <Route exact path="/categoria/:catn.:catid/talla-color/:tn-:cn.:tid.:cid" render={({ match, history, location }) => {
                         let
                             variables = Object.assign({}, this.state.variables, {
@@ -716,6 +872,7 @@ export default class App extends Component {
                         );
                     }}/>
 
+                    {/* 8. Filtro en Categorias filtro Marca-Talla-Color */}
                     <Route exact path="/categoria/:catname.:catid/marca-talla-color/:mn-:tn-:cn.:mid.:tid.:cid" render={({ match, history, location }) => {
                         let
                             variables = Object.assign({}, this.state.variables, {
@@ -795,9 +952,15 @@ export default class App extends Component {
                     )}/>
                     
                     <Route path="/" render={() => (
-                        <div
+                        <div id="footer"
                             style={{
-                                gridArea: `ft`
+                                gridArea: `ft`,
+                                position:`fixed`,
+                                bottom:`0`,
+                                width: `100%`,
+                                background: `#d2cece66`,
+                                zIndex:`9000`,
+                                //marginTop:`60%`,
                             }}
                         >
                             <FootrAdaptatAmbSubcategories

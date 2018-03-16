@@ -14,7 +14,7 @@ export const
             "nb s ."
             ". c ."
             ${bloCol}
-            "min fot tex"
+            "tex min fot"
             "ft ft ft"
         ;
     `,
@@ -36,7 +36,6 @@ export const
         transition: all 1s ease;
         z-index: 500;
         font-family: 'Pacifico', cursive;
-        top:8em;
     `,
 
     PosicionFiltro = styled.div`
@@ -48,9 +47,9 @@ export const
       className: 'filtro'
     })`
         width: 90%;
-        background: rgba(255, 255, 255, 0.25);
+        //background: rgba(255, 255, 255, 0.25);
         position: fixed;
-        margin-top: -8%;
+        margin-top: -2%;
         // padding-top:2em;
         float:right;
         z-index:400;
@@ -96,6 +95,7 @@ export const
 
     PosicionProductos = styled.div`
       grid-area: mos;
+      margin-top 7%;
     `,
 
     NavTitle = styled.h1`
@@ -165,7 +165,7 @@ export const
       //transform: scaleX(.9);
         &:hover, &:focus {
           color: yellow;
-
+          text-decoration:none;
         }
     `,
 
@@ -196,7 +196,38 @@ export const
 
     header = styled.header`
       grid-area: h;
-      position: relative;
+      position: fixed;
       z-index: 999;
+      width: 100%;
       `
+      ,
+
+      ulfooter = styled.ul`
+        display: inline-flex;
+        float: right;
+        margin-right: 2%;
+        `
+      ,
+
+      lifooter = styled.li`
+        padding:0.5em;
+        `
+       ,
+
+       afooter = styled.a`
+        color:black;
+        font-size: 1.25em;
+        text-shadow: 0 1px 0 rgba(255,255,255,.25);
+        font-family: 'Lato', sans-serif;
+        font-weight: 400;
+        &:hover {
+          color: yellow;
+        }
+        `
+        ,
+
+       divfooter = styled.div`
+        float:right;
+        width
+        `
 ;

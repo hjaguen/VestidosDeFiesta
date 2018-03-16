@@ -65,36 +65,44 @@ export default class FootrAdaptat extends Component {
 
         return (
             <div>
-              <ul>
-                <li>
-                  <a href=""
+              <div style={{
+                          float: `left`,
+                          width: `28%`,
+                        }}>
+                Atención Telefónica: Lu-Vi: 9am a 20pm y Sáb: 9am a 14pm
+                (+34) 962 441 478 / (+34) 962 440 776 / (+34) 667 220 775
+                ventas@latinmoda.info / Telegram: @latinmoda_bot
+              </div>
+              <Stylo.ulfooter>
+                <Stylo.lifooter>
+                  <Stylo.afooter href=""
                     data-toggle="modal"
                     data-target="#about">
                     Quiénes Somos
-                  </a>
-                </li>
-                <li>
-                  <a href=""
+                  </Stylo.afooter>
+                </Stylo.lifooter>
+                <Stylo.lifooter>
+                  <Stylo.afooter href=""
                     data-toggle="modal"
                     data-target="#terms">
                     Términos y Condiciones
-                  </a>
-                </li>
-                <li>
-                  <a href=""
+                  </Stylo.afooter>
+                </Stylo.lifooter>
+                <Stylo.lifooter>
+                  <Stylo.afooter href=""
                     data-toggle="modal"
                     data-target="#cookies">
                     Políticas de Cookies
-                  </a>
-                </li>
-                <li>
-                  <a href=""
+                  </Stylo.afooter>
+                </Stylo.lifooter>
+                <Stylo.lifooter>
+                  <Stylo.afooter href=""
                     data-toggle="modal"
                     data-target="#faq">
                     FAQ
-                  </a>
-                </li>
-              </ul>
+                  </Stylo.afooter>
+                </Stylo.lifooter>
+              </Stylo.ulfooter>
 
                 <div className="modal fade" id="about" tabIndex="-1" role="dialog" aria-labelledby="myModalLabel">
                       <div className="modal-dialog" role="document">
